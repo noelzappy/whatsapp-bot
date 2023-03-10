@@ -1,10 +1,11 @@
 import express from "express";
-import { whatsapp } from "./config/whatsapp";
+
+import { waAPI } from "./config/whatsapp";
 
 const app = express();
 
 app.get("/", async (req, res) => {
-  await whatsapp.post("/", {
+  await waAPI.post("/", {
     messaging_product: "whatsapp",
     to: "233542778775",
     type: "template",
