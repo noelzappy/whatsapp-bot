@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "typeRoots": ["@types", "./node_modules/@types"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "types/*": ["./@types/*"]
+    }
+  },
+  "lib": ["es2022"]
+}
